@@ -19,11 +19,11 @@
       <file leaf-file-name="new.component.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/new.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="49" lean-forward="false" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
+            <state relative-caret-position="405">
+              <caret line="27" column="67" lean-forward="false" selection-start-line="27" selection-start-column="67" selection-end-line="27" selection-end-column="67" />
               <folding>
-                <marker date="1537450069096" expanded="true" signature="330:629" ph="..." />
-                <marker date="1537450069096" expanded="true" signature="521:582" ph="..." />
+                <marker date="1537450286688" expanded="true" signature="330:619" ph="..." />
+                <marker date="1537450286688" expanded="true" signature="511:572" ph="..." />
               </folding>
             </state>
           </provider>
@@ -123,7 +123,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="237000" />
+    <option name="totallyTimeSpent" value="264000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="6" />
@@ -161,11 +161,22 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/new.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="49" lean-forward="false" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
+        <state relative-caret-position="295">
+          <caret line="22" column="11" lean-forward="true" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
           <folding>
-            <marker date="1537450069096" expanded="true" signature="330:629" ph="..." />
-            <marker date="1537450069096" expanded="true" signature="521:582" ph="..." />
+            <marker date="1537450286688" expanded="true" signature="330:619" ph="..." />
+            <marker date="1537450286688" expanded="true" signature="511:572" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/new.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="67" lean-forward="false" selection-start-line="27" selection-start-column="67" selection-end-line="27" selection-end-column="67" />
+          <folding>
+            <marker date="1537450286688" expanded="true" signature="330:619" ph="..." />
+            <marker date="1537450286688" expanded="true" signature="511:572" ph="..." />
           </folding>
         </state>
       </provider>
