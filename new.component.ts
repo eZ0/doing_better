@@ -42,6 +42,9 @@ export class InformationBar implements OnChanges, OnInit {
 
         if (this.hasLimitedUsageWarning) {
             return amount;
+        } else if (amount < 666) {
+            amount = amount + 1;
+
         } else {
             amount = 666;
 
