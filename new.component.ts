@@ -1,4 +1,4 @@
-import {Component, Input, OnChanges, SimpleChanges} from "@angular/core";
+import {Component, Input, OnChanges, SimpleChanges, OnInit} from "@angular/core";
 
 
 @Component({
@@ -17,11 +17,16 @@ import {Component, Input, OnChanges, SimpleChanges} from "@angular/core";
 `
 })
 
-export class InformationBar implements OnChanges {
+export class InformationBar implements OnChanges, OnInit {
     @Input() public limitedUsageTranslationKey: string = null;
-    @Input() public amountOfWarnings: number = 0;
+
+    public amountOfWarnings: number = 0;
 
     public hasLimitedUsageWarning = false;
+
+    public ngOnInit(): void {
+        this.calculateAmoutOfWarnings();
+    }
 
     public ngOnChanges(changes: SimpleChanges): void {
         if (changes.hasOwnProperty('limitedUsageTranslationKey')) {
@@ -31,5 +36,9 @@ export class InformationBar implements OnChanges {
 
     public showWarning(): boolean {
         this.hasLimitedUsageWarning = !this.hasLimitedUsageWarning;
+    }
+
+    public calculateAmoutOfWarnings(): number {
+
     }
 }
