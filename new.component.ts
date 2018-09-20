@@ -19,19 +19,17 @@ import {Component, Input, OnChanges, SimpleChanges, OnInit} from "@angular/core"
 
 export class InformationBar implements OnChanges, OnInit {
     @Input() public myTranslationKey: string = null;
-    @Input() public amountOfWarnings: number = 0;
 
     public amountOfWarnings: number = 0;
 
     public hasLimitedUsageWarning = false;
-
-    public ngOnInit(): void {
-        this.calculateAmoutOfWarnings();
-    }
-
+    
     public ngOnChanges(changes: SimpleChanges): void {
         if (changes.hasOwnProperty('myTranslationKey')) {
             this.hasLimitedUsageWarning = changes['myTranslationKey'].currentValue !== null;
+
+            this.amountOfWarnings = this.calculateAmoutOfWarnings()
+            console.log(this.amountOfWarnings)
         }
     }
 
@@ -40,6 +38,15 @@ export class InformationBar implements OnChanges, OnInit {
     }
 
     public calculateAmoutOfWarnings(): number {
+        var amount = 0;
+
+        if (this.hasLimitedUsageWarning) {
+            return amount;
+        } else {
+            amount = 666;
+
+            this.myTranslationKey = 'too many warnings';
+        }
 
     }
 }
