@@ -11,7 +11,7 @@ import {Component, Input, OnChanges, SimpleChanges, OnInit} from "@angular/core"
         <button class="__button vb-icon-button vb-icon-button--close h-margin-left-double" (click)="showWarning()">
             <i class="mdi mdi-close" ></i>
         </button>
-        <p>{{amountOfWarnings}}</p>
+        <p>Warnings: {{amountOfWarnings}}</p>
     </div>
     
 `
@@ -23,7 +23,7 @@ export class InformationBar implements OnChanges, OnInit {
     public amountOfWarnings: number = 0;
 
     public hasLimitedUsageWarning = false;
-    
+
     public ngOnChanges(changes: SimpleChanges): void {
         if (changes.hasOwnProperty('myTranslationKey')) {
             this.hasLimitedUsageWarning = changes['myTranslationKey'].currentValue !== null;
