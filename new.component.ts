@@ -18,12 +18,10 @@ import {Component, Input, OnChanges, SimpleChanges, OnInit} from "@angular/core"
 })
 
 export class InformationBar implements OnChanges, OnInit {
-    @Input() public limitedUsageTranslationKey: string = null;
-
-    public amountOfWarnings: number = 0;
-export class InformationBar implements OnChanges {
     @Input() public myTranslationKey: string = null;
     @Input() public amountOfWarnings: number = 0;
+
+    public amountOfWarnings: number = 0;
 
     public hasLimitedUsageWarning = false;
 
